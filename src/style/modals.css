@@ -1,0 +1,87 @@
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+.modals {
+  background-color: var(--light-color);
+  width: 40%;
+  min-height: 100px;
+  color: #000;
+  border-radius: 16px;
+  /* overflow: hidden; */
+}
+.modals .modal-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal-content .modal-text {
+  padding: 2%;
+  width: 30%;
+}
+.modal-content .modal-text h3 {
+  font-size: 1.5em;
+  margin-bottom: 6px;
+}
+.modal-content .modal-text p {
+  font-size: 1em;
+}
+.modals .modal-link {
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 0;
+  border-radius: 0 0 16px 16px;
+}
+.modals .modal-link i {
+  cursor: pointer;
+  font-size: 1.2em;
+  margin: 0 3%;
+}
+.modals .modal-link i:hover {
+  animation: glitch 5s infinite;
+}
+.modals .modal-link a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #000;
+  font-weight: 700;
+  margin: 0 3%;
+}
+.modals .modal-link a:hover {
+  color: var(--light-color);
+  filter: drop-shadow(1px 1px 1px var(--primary-color));
+  animation: glitch 5s infinite;
+}
+.modals .modal-link:hover {
+  animation: glitch-box 5s infinite;
+}
+
+.modals .modal-content img {
+  width: 60%;
+  border-radius: 16px 0 0 0;
+}
+
+@media (max-width: 800px) {
+  .modals {
+    width: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .modals {
+    width: 80%;
+  }
+}

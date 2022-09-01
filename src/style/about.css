@@ -1,0 +1,63 @@
+.container-about {
+  background-color: var(--primary-color);
+  text-align: left;
+  min-height: 97vh;
+  padding: 1%;
+}
+.container-about .text {
+  width: 80%;
+  margin: auto;
+}
+.container-about .text h2 {
+  font-size: 3em;
+  color: var(--secondary-color);
+  text-shadow: 2px 2px 1px var(--shadow-secondary-color);
+  font-weight: bold;
+}
+.container-about .text h2::before,
+.container-about .text h2::after {
+  color: #c1c1c1;
+  display: block;
+  margin: 2% 0;
+  margin-left: -4%;
+  font-weight: 100;
+  text-shadow: none;
+}
+.container-about .text h2::before {
+  content: "<h2>";
+}
+.container-about .text h2::after {
+  content: "</h2>";
+}
+.container-about .text p {
+  font-size: 1.53em;
+  color: var(--light-color);
+  font-weight: 600;
+  line-height: 130%;
+}
+.container-about .text p::before,
+.container-about .text p::after {
+  color: #c1c1c1;
+  display: block;
+  margin: 2% 0;
+  margin-left: -4%;
+  font-weight: 100;
+}
+.container-about .text p::before {
+  content: "<p>";
+}
+.container-about .text p::after {
+  content: "</p>";
+}
+.container-about .text a {
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 1.53em;
+  font-weight: 600;
+  animation: glitch 5s infinite;
+  animation-delay: 30s;
+  transition: 0.6s;
+}
+.container-about .text a:hover {
+  color: var(--secondary-color);
+}
