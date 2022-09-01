@@ -291,6 +291,7 @@ hr {
   .container-home .title h1::after {
     color: var(--light-color);
     text-shadow: 2px 2px 1px var(--dark-color);
+    margin: 0;
   }
   .arrow-scroll {
     right: 6%;
@@ -307,6 +308,5 @@ hr {
 }
 .one {
   opacity: 1;
-  transform: scale(1);
   transition: 1s;
 }
