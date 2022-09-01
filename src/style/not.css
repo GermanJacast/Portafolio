@@ -360,6 +360,7 @@
   position: absolute;
   width: 110%;
   z-index: -1;
+  font-family: Roboto, sans-serif;
 }
 .container-cyber .layers::before {
   top: 12px;
@@ -369,8 +370,8 @@
 .container-cyber .layers::after {
   top: 6px;
   left: -12px;
-  color: #1bc7fb;
-  /* color: var(--secondary-color); */
+  /* color: #1bc7fb; */
+  color: var(--secondary-color);
 }
 
 /* Glitch effect 02 (mas cariño)*/
@@ -756,7 +757,7 @@
     width: 90%;
   }
   .container-cyber h2 {
-    font-size: 4em;
+    font-size: 3.8em;
   }
   .container-cyber p {
     font-size: 2.8em;
