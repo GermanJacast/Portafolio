@@ -1,6 +1,8 @@
 import '../style/jobs.css'
 import Modals from './Modals';
 import { useState } from 'react';
+import NpNg from '../img/Logo-NpNg.png';
+import CapturaNpNg from '../img/capturaNpNg.png';
 
 export const Jobs = () => {
   const [stateModal, changeStateModal] = useState(false);
@@ -18,8 +20,8 @@ export const Jobs = () => {
                     className='button-modals'
                     onClick={() => changeStateModal(!stateModal)}
                     >
-                        <img src='https://picsum.photos/300/200' />
-                        <p>X</p>
+                        <img src={NpNg} className='npng' alt='Logo del sitio NpNg' title='Logo de NpNg' />
+                        <p>NpNg</p>
                     </div>
                 </div>
                 <div className='border-frame'>
@@ -27,7 +29,7 @@ export const Jobs = () => {
                     className='button-modals'
                     onClick={() => changeStateModal1(!stateModal1)}
                     >
-                        <img src='https://picsum.photos/300/200' />
+                        <img src='https://picsum.photos/300/200' alt='' title='' />
                         <p>Y</p>
                     </div> 
                 </div>
@@ -36,7 +38,7 @@ export const Jobs = () => {
                     className='button-modals'
                     onClick={() => changeStateModal2(!stateModal2)}
                     >
-                        <img src='https://picsum.photos/300/200' />
+                        <img src='https://picsum.photos/300/200' alt='' title='' />
                         <p>Z</p>
                     </div> 
                 </div> 
@@ -45,11 +47,13 @@ export const Jobs = () => {
                 <Modals
                     estado={stateModal} 
                     cambiarEstado={changeStateModal}
-                    titulo='Hola'
-                    descr='Lugar X'
-                    link=''
+                    titulo='No Pain No Gain'
+                    descr='Sitio orientado al gimnasio NpNg, en donde se enfoca 
+                            una sencilla usabilidad para el usuario, pero sin dejar de mostrar la informacion
+                            importante y necesaria de acuerdo al cliente'
+                    link='https://germanjacast.github.io/NpNg/'
                 >
-                    <img src='https://picsum.photos/200/200'/>
+                    <img src={CapturaNpNg} alt='Captura realizada al sitio web de NpNg' title='Captura de NpNg' />
                 </Modals>
                 <Modals
                     estado={stateModal1} 
@@ -58,7 +62,7 @@ export const Jobs = () => {
                     descr='Lugar Y'
                     link=''
                 >
-                    <img src='https://picsum.photos/200/200'/>
+                    <img src='https://picsum.photos/200/200' alt='' title='' />
 
                 </Modals>
                 <Modals
@@ -68,7 +72,7 @@ export const Jobs = () => {
                     descr='Lugar Z'
                     link=''
                 >   
-                    <img src='https://picsum.photos/200/200'/>
+                    <img src='https://picsum.photos/200/200' alt='' title='' />
                 </Modals>
             </div>
         </div>

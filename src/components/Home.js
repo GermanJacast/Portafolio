@@ -103,7 +103,7 @@ export const Home = () => {
       <span className='tag-up-html' />
       <div className='container-home'>
         <div className='logo'>
-          <img src={Logo} />
+          <img src={Logo} alt='Logo del sitio Jacast' title='Logo de Jacast'/>
         </div>
         <div className='title'>
           <h1>
