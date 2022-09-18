@@ -12,7 +12,7 @@
 }
 .modals {
   background-color: var(--light-color);
-  width: 40%;
+  width: 50%;
   min-height: 100px;
   color: #000;
   border-radius: 16px;
@@ -77,11 +77,17 @@
 
 @media (max-width: 800px) {
   .modals {
-    width: 60%;
+    width: 70%;
+  }
+  .modal-content .modal-text {
+    width: 100%;
+  }
+  .modals .modal-content img {
+    width: 100%;
   }
 }
 @media (max-width: 600px) {
   .modals {
-    width: 80%;
+    width: 90%;
   }
 }

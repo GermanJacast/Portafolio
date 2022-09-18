@@ -45,7 +45,8 @@ function App() {
         {/* 404 soft */}
         <Route path='*' element={<Not/>} />
         {/* At the moment the domain is fixed */}
-        {/* <Route path='/Portafolio' element={<Home/>} /> */}
+        {/* yet to see */}
+        <Route path='/Portafolio' element={<Home/>} />
       </Routes>
     </div>
   );

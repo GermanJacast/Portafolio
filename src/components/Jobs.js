@@ -50,7 +50,7 @@ export const Jobs = () => {
                     titulo='No Pain No Gain'
                     descr='Sitio orientado al gimnasio NpNg, en donde se enfoca 
                             una sencilla usabilidad para el usuario, pero sin dejar de mostrar la informacion
-                            importante y necesaria de acuerdo al cliente'
+                            importante y necesaria de acuerdo al cliente.'
                     link='https://germanjacast.github.io/NpNg/'
                 >
                     <img src={CapturaNpNg} alt='Captura realizada al sitio web de NpNg' title='Captura de NpNg' />
@@ -58,11 +58,13 @@ export const Jobs = () => {
                 <Modals
                     estado={stateModal1} 
                     cambiarEstado={changeStateModal1}
-                    titulo='Hola'
-                    descr='Lugar Y'
-                    link=''
+                    titulo='Cloudy'
+                    descr='Sitio orientado a mostrar toda la información relacionada con el clima. El objetivo de Cloudy es que
+                            todos tengan acceso a los datos del clima de su ubicacion de manera precisa, y sin olvidar la adaptabilidad para
+                            los diferentes dispositivos.'
+                    link='https://germanjacast.github.io/Cloudy/'
                 >
-                    <img src='https://picsum.photos/200/200' alt='' title='' />
+                    <img src='https://picsum.photos/200/200' alt='Captura realizada al sitio web de Cloudy' title='Captura de Cloudy' />
 
                 </Modals>
                 <Modals
