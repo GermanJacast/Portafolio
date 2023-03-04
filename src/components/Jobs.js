@@ -2,7 +2,9 @@ import '../style/jobs.css'
 import Modals from './Modals';
 import { useState } from 'react';
 import NpNg from '../img/Logo-NpNg.png';
+import Cloudy from '../img/Logo-Cloudy.png';
 import CapturaNpNg from '../img/capturaNpNg.png';
+import CapturaCloudy from '../img/capturaCloudy.png';
 
 export const Jobs = () => {
   const [stateModal, changeStateModal] = useState(false);
@@ -29,8 +31,8 @@ export const Jobs = () => {
                     className='button-modals'
                     onClick={() => changeStateModal1(!stateModal1)}
                     >
-                        <img src='https://picsum.photos/300/200' alt='' title='' />
-                        <p>Y</p>
+                        <img src={Cloudy} className='cloudy' alt='Logo del sitio Cloudy' title='Logo de Cloudy' />
+                        <p>Cloudy</p>
                     </div> 
                 </div>
                 <div className='border-frame'>
@@ -38,8 +40,8 @@ export const Jobs = () => {
                     className='button-modals'
                     onClick={() => changeStateModal2(!stateModal2)}
                     >
-                        <img src='https://picsum.photos/300/200' alt='' title='' />
-                        <p>Z</p>
+                        <img src='https://picsum.photos/300/200' alt='Logo del sitio Pets' title='Logo de Pets' />
+                        <p>Pets</p>
                     </div> 
                 </div> 
             </div>
@@ -64,17 +66,20 @@ export const Jobs = () => {
                             los diferentes dispositivos.'
                     link='https://germanjacast.github.io/Cloudy/'
                 >
-                    <img src='https://picsum.photos/200/200' alt='Captura realizada al sitio web de Cloudy' title='Captura de Cloudy' />
+                    <img src={CapturaCloudy} alt='Captura realizada al sitio web de Cloudy' title='Captura de Cloudy' />
 
                 </Modals>
                 <Modals
                     estado={stateModal2} 
                     cambiarEstado={changeStateModal2}
-                    titulo='Hola'
-                    descr='Lugar Z'
-                    link=''
+                    titulo='Pets'
+                    descr='Sitio orientado a la venta de productos para la alimentación y el cuidado de las 
+                            mascotas, así como también cumplir la función de unir diferentes centros de adopción
+                            para que toda la información esté en un solo lugar. De igual forma, se dedica un 
+                            apartado para aquellos que están desaparecidos.'
+                    link='https://germanjacast.github.io/Pets/'
                 >   
-                    <img src='https://picsum.photos/200/200' alt='' title='' />
+                    <img src='https://picsum.photos/200/200' alt='Captura realizada al sitio web de Pets ' title='Captura de Pets' />
                 </Modals>
             </div>
         </div>

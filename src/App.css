@@ -226,6 +226,10 @@ body {
   .container-navigation .navigation-nav {
     top: 1.5em;
   }
+  .container-navigation .navigation-nav ul {
+    /* margin-top: -25%; */
+    margin-top: -20%;
+  }
 }
 @media (max-width: 700px) {
   .container-navigation {

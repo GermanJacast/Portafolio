@@ -15,10 +15,11 @@ export const Skills = () => {
         </p>
       </div>
       <div className='skills'>
+        {/* basic -> intermediate -> advanced -> almost expert */}
         <div className='bar almost-expert' data-skills="HTML5"></div>
         <div className='bar almost-expert' data-skills="Css3"></div>
         <div className='bar advanced' data-skills="Java Script"></div>
-        <div className='bar basic' data-skills="ReactJS"></div>
+        <div className='bar intermediate' data-skills="ReactJS"></div>
         <div className='bar intermediate' data-skills="Photoshop"></div>
         <div className='bar intermediate' data-skills="Illustrator"></div>
       </div>
