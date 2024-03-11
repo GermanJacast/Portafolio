@@ -41,7 +41,7 @@ export const Jobs = () => {
                     onClick={() => changeStateModal2(!stateModal2)}
                     >
                         <img src='https://picsum.photos/300/200' alt='Logo del sitio Pets' title='Logo de Pets' />
-                        <p>Pets</p>
+                        <p>BroPets</p>
                     </div> 
                 </div> 
             </div>
@@ -72,12 +72,12 @@ export const Jobs = () => {
                 <Modals
                     estado={stateModal2} 
                     cambiarEstado={changeStateModal2}
-                    titulo='Pets'
+                    titulo='BroPets'
                     descr='Sitio orientado a la venta de productos para la alimentación y el cuidado de las 
                             mascotas, así como también cumplir la función de unir diferentes centros de adopción
                             para que toda la información esté en un solo lugar. De igual forma, se dedica un 
                             apartado para aquellos que están desaparecidos.'
-                    link='https://germanjacast.github.io/Pets/'
+                    link='https://germanjacast.github.io/BroPets/'
                 >   
                     <img src='https://picsum.photos/200/200' alt='Captura realizada al sitio web de Pets ' title='Captura de Pets' />
                 </Modals>
